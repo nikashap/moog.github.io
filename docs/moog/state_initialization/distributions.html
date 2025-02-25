@@ -137,7 +137,7 @@ class Continuous(AbstractDistribution):
         &#34;&#34;&#34;Sample value in [self.minval, self.maxval) and return dict.&#34;&#34;&#34;
         rng = self._get_rng(rng)
         out = rng.uniform(low=self.minval, high=self.maxval)
-        out = np.assarray(out, dtype=self.dtype)
+        out = np.asarray(out, dtype=self.dtype)
         return {self.key: out}
 
     def contains(self, spec):
@@ -695,7 +695,7 @@ def to_str(self, indent):
         &#34;&#34;&#34;Sample value in [self.minval, self.maxval) and return dict.&#34;&#34;&#34;
         rng = self._get_rng(rng)
         out = rng.uniform(low=self.minval, high=self.maxval)
-        out = np.assarray(out, dtype=self.dtype)
+        out = np.asarray(out, dtype=self.dtype)
         return {self.key: out}
 
     def contains(self, spec):
@@ -755,7 +755,7 @@ def to_str(self, indent):
     &#34;&#34;&#34;Sample value in [self.minval, self.maxval) and return dict.&#34;&#34;&#34;
     rng = self._get_rng(rng)
     out = rng.uniform(low=self.minval, high=self.maxval)
-    out = np.assarray(out, dtype=self.dtype)
+    out = np.asarray(out, dtype=self.dtype)
     return {self.key: out}</code></pre>
 </details>
 </dd>
